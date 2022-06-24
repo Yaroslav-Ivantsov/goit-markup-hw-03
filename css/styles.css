@@ -20,6 +20,20 @@
     
 }
 
+/* Normalize */
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+
+
 
 
 
@@ -34,10 +48,19 @@ body{
     
 }
 
+.container{
+    width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+    
+}
+
 /* Убираю точки в списках */
 ul{
     list-style: none;
-    
 }
 
 /* logo */
@@ -59,6 +82,11 @@ ul{
 }
 
 /* site nav */
+.site-nav{
+    padding: 0;
+    margin: 0;
+}
+
 .site-nav a{
     text-decoration: none;
 }
@@ -81,6 +109,11 @@ ul{
 }
 
 /* контакты */
+.site-contacts{
+    padding: 0;
+    margin: 0;
+}
+
 .site-contacts a{
     text-decoration: none;
 }
@@ -100,22 +133,33 @@ ul{
 
 /* hero */
 .hero{
+    text-align: center;
     background-color: var(--secondary-background-color);
 }
 
 .hero-title{
+    margin-top: 0;
+    margin-bottom: 30px;
     color: var(--white-text-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    
 }
 
 
 /* секции */
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .section-title{
+    margin-top: 0;
+    margin-bottom: 50px;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -124,7 +168,27 @@ ul{
     text-transform: uppercase;
 }
 
+.section-list{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.section-title-none{
+    display: none;
+}
+
 /* features */
+.list{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.feature-list{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .feature-list .list{
     color: var(--title-text-color);
     font-weight: 700;
@@ -134,28 +198,44 @@ ul{
 }
 
 .text-list{
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;   
 }
 
 /* workers */
+.worker-list{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .worker-list .worker{
     color: var(--title-text-color);
 }
 
+.worker-photo{
+    margin-bottom: 30px;
+}
+
+
 .worker{
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    text-align: center;    
+        
 }
 
 .work-position{
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
-    text-align: center;     
+         
 }
 
 /* fotter */
@@ -183,6 +263,12 @@ footer{
 }
 
 /* fotter-contacts */
+.contacts-nav{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
 .contacts-nav a{
     text-decoration: none;
 }
@@ -224,9 +310,8 @@ button{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    border: none;
+    border-radius: 4px;
     letter-spacing: 0.06em;
 }
 
@@ -240,6 +325,10 @@ button:focus{
 /* PORTFOLIO */
 
 /* Кнопки в портфолио */
+.button-nav{
+    margin-top: 0;
+    margin-bottom: 34px;
+}
 
 .button-nav .button-list{
     background-color: var(--white-text-color) ;
@@ -267,6 +356,19 @@ button:focus{
 
 
 /* Projects */
+.projects{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.projects-photo{
+    margin-bottom: 20px;
+}
+
+.project-title{
+    margin-top: 0;
+    margin-bottom: 4px;
+}
 
 .projects .project-title{
     color: var(--title-text-color);
@@ -277,6 +379,8 @@ button:focus{
 }
 
 .project-list{
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--secondary-text-colar);
     font-weight: 400;
     font-size: 16px;
