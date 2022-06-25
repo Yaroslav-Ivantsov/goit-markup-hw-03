@@ -430,8 +430,18 @@ button:focus{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    text-align: center; 
+    text-align: center;
 }
+
+.but-link{
+    margin-right: 8px;
+}
+
+.but-link:nth-child(5n){
+    margin-right: 0;
+}
+
+
 
 .button-list:hover,
 .button-list:focus{
