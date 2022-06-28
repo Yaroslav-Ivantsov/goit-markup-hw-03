@@ -44,7 +44,6 @@ html{
 
 body{
     color: var(--secondary-text-colar);
-    background-color: var(--primery-background-color);
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
     
@@ -68,7 +67,13 @@ ul{
 /* Header */
 
 header{
-    border: 1px solid var(--br-header-colar);
+    border-bottom: 1px solid var(--br-header-colar);
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .main-div{
@@ -221,11 +226,6 @@ header{
     margin-right: 30px;
 }
 
-.section-img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
 
 
 .section-title-none{
@@ -290,6 +290,7 @@ header{
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background: var(--white-text-color);
 }
 
 .worker-list .team-list:not(:last-child){
@@ -439,7 +440,7 @@ button:focus{
 .button-nav .button-list{
     padding-left: none;
     padding: 6px 22px;
-    background-color: var(--white-text-color) ;
+    background: var(--primery-background-color);
     color: var(--title-text-color);
     cursor: pointer;
     font-family: inherit;
